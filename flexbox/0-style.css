@@ -179,20 +179,23 @@
   
   /* Grid
       ============================= */
-
-      .row{
-        display: flex;
-        flex-wrap: wrap;
-      }
-  
   ul.row {
     margin: 0;
     padding: 0;
     list-style: none;
   }
+
+.row {
+    display: flex; /* Add display flex to make children flex items */
+    flex-wrap: wrap; /* Wrap children to new line if necessary */
+    margin-right: -15px; /* Adjust margin for negative space */
+    margin-left: -15px; /* Adjust margin for negative space */
+  }
   
   [class*='col-'] {
-    padding: 0.5rem;
+    padding-right: 15px; /* Add padding to create space between columns */
+    padding-left: 15px; /* Add padding to create space between columns */
+    /* Remove float: left */
   }
   
   .col-1-3 {
