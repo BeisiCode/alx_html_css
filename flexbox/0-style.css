@@ -182,6 +182,7 @@
 
       .row{
         display: flex;
+        flex-wrap: wrap;
       }
   
   ul.row {
