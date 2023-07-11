@@ -185,17 +185,13 @@
     list-style: none;
   }
 
+  /* Grid section */
 .row {
-    display: flex; /* Add display flex to make children flex items */
-    flex-wrap: wrap; /* Wrap children to new line if necessary */
-    margin-right: -15px; /* Adjust margin for negative space */
-    margin-left: -15px; /* Adjust margin for negative space */
-  }
+  display: flex;
+}
   
   [class*='col-'] {
-    padding-right: 15px; /* Add padding to create space between columns */
-    padding-left: 15px; /* Add padding to create space between columns */
-    /* Remove float: left */
+    padding: 0.5rem;
   }
   
   .col-1-3 {
